@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
 mongoose.connect(
-  "mongodb://0.0.0.0:27017/codeX",
+  "mongodb://127.0.0.1:27017/codeX",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
