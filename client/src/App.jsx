@@ -3,7 +3,7 @@ import CodeMirror from "@uiw/react-codemirror";
 import { dracula } from "@uiw/codemirror-theme-dracula";
 import Header from "./header/Header";
 import Functions from "./functions/Functions";
-import Options from "./options/Options";
+// import Options from "./options/Options";
 import { useState } from "react";
 import { useEffect } from "react";
 import axios from "axios";
@@ -91,6 +91,7 @@ function App() {
     if (!jobDetails) {
       return "";
     }
+    
     let { submittedAt, startedAt, completedAt } = jobDetails;
     let result = "";
     submittedAt = moment(submittedAt).toString();
